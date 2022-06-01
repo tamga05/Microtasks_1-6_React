@@ -1,4 +1,5 @@
 import React from 'react';
+import s from "./Mt2HomeWork.module.css";
 
 
 type Mt2Type = {
@@ -14,16 +15,20 @@ type StudentType = {
 
 export const Mt2 = (props: Mt2Type) => {
     return (
-        <ul>
-            {props.students.map((objectFromStudentArray, index) => {
-                return (
-                    <li key={objectFromStudentArray.id}>
-                        <span> {objectFromStudentArray.name}</span>
-                        <span>: {objectFromStudentArray.age} years old</span>
-                    </li>
-                )
-            })}
-        </ul>
+        <div>
+            <h3>Mt2 Lesson</h3>
+            <ul className={s.list}>
+                {props.students.map((objectFromStudentArray, index) => {
+                    return (
+                        <li key={objectFromStudentArray.id}>
+                            <span> {objectFromStudentArray.name}</span>
+                            <span>: {objectFromStudentArray.age} years old</span>
+                        </li>
+                    )
+                })}
+            </ul>
+            <br/>
+        </div>
     );
 }
 
