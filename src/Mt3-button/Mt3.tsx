@@ -40,7 +40,7 @@ export const Mt3 = () => {
 
     return (
         <div>
-            <h3>Mt3 Lesson</h3>
+            <h3>Mt3 Lesson (Button)</h3>
             {/*<button>MyYouTubeChannel-1</button>*/}
             {/*<button>MyYouTubeChannel-2</button>*/}
             <Button name={'MyYouTubeChannel-1'} callBack={() => Button1Foo('I\'m Vasya', ', 25', ', live in Moscow')}/>

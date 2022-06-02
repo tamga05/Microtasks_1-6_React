@@ -1,5 +1,5 @@
 import React from 'react';
-import s from "./Mt2.module.css";
+import s from './Mt2.module.css';
 
 
 type Mt2Type = {
@@ -16,7 +16,7 @@ type StudentType = {
 export const Mt2 = (props: Mt2Type) => {
     return (
         <div>
-            <h3>Mt2 Lesson</h3>
+            <h3>Mt2 Lesson (Method map)</h3>
             <ul className={s.list}>
                 {props.students.map((objectFromStudentArray, index) => {
                     return (
