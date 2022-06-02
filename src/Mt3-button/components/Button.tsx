@@ -1,4 +1,5 @@
 import React from 'react';
+import s from '../Mt3.module.css';
 
 
 type ButtonType = {
@@ -14,7 +15,7 @@ export const Button = (props: ButtonType) => {
     }
 
     return (
-        <div>
+        <div className={s.button}>
             <button onClick={onClickHandler}>{props.name}</button>
         </div>
     )
