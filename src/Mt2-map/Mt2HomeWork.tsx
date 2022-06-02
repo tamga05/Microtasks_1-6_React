@@ -1,9 +1,9 @@
-import React from "react";
-import s from "./Mt2HomeWork.module.css";
+import React from 'react';
+import s from './Mt2.module.css';
 
 
 type Mt2HWType = {
-    cars: Array<CarType>
+    cars: CarType[]
 }
 
 type CarType = {
@@ -26,11 +26,11 @@ export const Mt2HomeWork = (props: Mt2HWType) => {
                             <td className={s.td}>{rowCar.model}</td>
                         </tr>
                         </tbody>
-                    )
+                    );
                 })}
             </table>
             <br/>
         </div>
-    )
-}
+    );
+};
 

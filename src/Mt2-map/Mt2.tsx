@@ -1,5 +1,5 @@
 import React from 'react';
-import s from "./Mt2HomeWork.module.css";
+import s from "./Mt2.module.css";
 
 
 type Mt2Type = {
