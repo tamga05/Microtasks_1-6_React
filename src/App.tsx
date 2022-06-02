@@ -1,11 +1,12 @@
 import React from 'react';
 import './App.css';
-import {Mt2} from './Mt2-map/Mt2';
+import {Mt2} from './Mt2-map-method/Mt2';
 import {Mt1} from './Mt1-components/Mt1';
-import {Mt2HomeWork} from './Mt2-map/Mt2HomeWork';
+import {Mt2HomeWork} from './Mt2-map-method/Mt2HomeWork';
 import {Mt1HomeWork} from './Mt1-components/Mt1HomeWork';
 import {Mt3} from './Mt3-button/Mt3';
 import {Mt3HomeWork} from './Mt3-button/Mt3HomeWork';
+import {Mt4} from './Mt4-useState/Mt4';
 
 
 const Students = [
@@ -43,7 +44,7 @@ function App() {
             <Mt3/>
             <Mt3HomeWork/>
             <hr/>
-            {/*<Mt4/>*/}
+            <Mt4/>
             <hr/>
             {/*<Mt5/>*/}
             <hr/>

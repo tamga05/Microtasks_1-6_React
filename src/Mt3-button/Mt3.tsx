@@ -1,5 +1,4 @@
 import React from 'react';
-import s from './Mt3.module.css';
 import {Button} from './components/Button';
 
 
