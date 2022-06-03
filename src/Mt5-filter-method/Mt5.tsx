@@ -1,8 +1,9 @@
 import React, {useState} from 'react';
 import s from './Mt5.module.css';
+import {MT5HomeWork} from './MT5HomeWork';
 
 
-type FilterType = 'All' | 'Dollar' | 'Ruble';
+export type FilterType = 'All' | 'Dollar' | 'Ruble';
 
 
 export const Mt5 = () => {
@@ -21,6 +22,7 @@ export const Mt5 = () => {
     const [filter, setFilter] = useState<FilterType>('All');
 
     let currentMoney = money;
+
 
     if (filter === 'Dollar') {
         currentMoney = money.filter(filteredMoney => filteredMoney.banknots === 'Dollar');
@@ -52,12 +54,14 @@ export const Mt5 = () => {
                 )
                 }
             </ul>
-
             <button className={s.button} onClick={() => onClickFilterHandler('All')}>All</button>
             <button className={s.button} onClick={() => onClickFilterHandler('Ruble')}>Ruble</button>
             <button className={s.button} onClick={() => onClickFilterHandler('Dollar')}>Dollar</button>
             <br/>
-            <br/>
+
+            {/*MT5HomeWork это отдедьная компонента, в которую передаются Отфильтрованные объекты из массива и функция onClickFilterHandler*/}
+            <MT5HomeWork arrMoney={currentMoney} onClickFilterHandler={onClickFilterHandler}/>
+
         </div>
     );
 };

@@ -6,7 +6,7 @@ import {Mt2HomeWork} from './Mt2-map-method/Mt2HomeWork';
 import {Mt1HomeWork} from './Mt1-components/Mt1HomeWork';
 import {Mt3} from './Mt3-button/Mt3';
 import {Mt4} from './Mt4-useState/Mt4';
-import {Mt5} from './Mt5-filter/Mt5';
+import {Mt5} from './Mt5-filter-method/Mt5';
 
 
 const Students = [

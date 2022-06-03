@@ -15,7 +15,7 @@ type CarType = {
 export const Mt2HomeWork = (props: Mt2HWType) => {
     return (
         <div>
-            <h3>Mt2 HomeWork</h3>
+            <h3>Mt2 Home Work</h3>
             <table className={s.table}>
                 {props.cars.map((rowCar, index) => {
                     return (

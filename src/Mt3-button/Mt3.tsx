@@ -27,15 +27,16 @@ export const Mt3 = () => {
     //     }
 
     const Button1Foo = (subscriber: string, age: string, address: string) => {
-        console.log(subscriber, age, address)
-    }
+        console.log(subscriber, age, address);
+    };
+
     const Button2Foo = (subscriber: string) => {
-        console.log(subscriber)
-    }
+        console.log(subscriber);
+    };
 
     const Button3Foo = () => {
-        console.log('I\'m stuppid button')
-    }
+        console.log('I\'m stuppid button');
+    };
 
 
     return (
