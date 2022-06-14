@@ -15,10 +15,10 @@ type objArrMoney = {
 }
 
 
-export const MT5HomeWork = (props: NewComponentType) => {
+export const Mt5HomeWork = (props: NewComponentType) => {
     return (
         <div>
-            <ul>
+            <ul className={s.list}>
                 <h3>Mt5 Home Work (Method filter)</h3>
 
                 {props.arrMoney.map((objMoneyArr, index) => {

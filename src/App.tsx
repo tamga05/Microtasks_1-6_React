@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import {Mt2} from './Mt2-map-method/Mt2';
 import {Mt1} from './Mt1-components/Mt1';
@@ -7,6 +7,8 @@ import {Mt1HomeWork} from './Mt1-components/Mt1HomeWork';
 import {Mt3} from './Mt3-button/Mt3';
 import {Mt4} from './Mt4-useState/Mt4';
 import {Mt5} from './Mt5-filter-method/Mt5';
+import Mt6 from './Mt6-input/Mt6';
+// import {Example} from './Mt6-input/Mt6';
 
 
 const Students = [
@@ -47,6 +49,9 @@ function App() {
             <hr/>
             <Mt5/>
             <hr/>
+            <Mt6/>
+            <hr/>
+            {/*<Example/>*/}
         </div>
     );
 }

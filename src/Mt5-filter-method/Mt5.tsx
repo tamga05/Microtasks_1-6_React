@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import s from './Mt5.module.css';
-import {MT5HomeWork} from './MT5HomeWork';
+import {Mt5HomeWork} from './MT5HomeWork';
 
 
 export type FilterType = 'All' | 'Dollar' | 'Ruble';
@@ -40,7 +40,7 @@ export const Mt5 = () => {
 
     return (
         <div>
-            <ul>
+            <ul className={s.list}>
                 <h3>Mt5 Lesson (Method filter)</h3>
                 {currentMoney.map((objMoneyArr, index) => {
                         return (
@@ -59,8 +59,8 @@ export const Mt5 = () => {
             <button className={s.button} onClick={() => onClickFilterHandler('Dollar')}>Dollar</button>
             <br/>
 
-            {/*MT5HomeWork это отдедьная компонента, в которую передаются Отфильтрованные объекты из массива и функция onClickFilterHandler*/}
-            <MT5HomeWork arrMoney={currentMoney} onClickFilterHandler={onClickFilterHandler}/>
+            {/*Mt5HomeWork это отдедьная компонента, в которую передаются Отфильтрованные объекты из массива и функция onClickFilterHandler*/}
+            <Mt5HomeWork arrMoney={currentMoney} onClickFilterHandler={onClickFilterHandler}/>
 
         </div>
     );
