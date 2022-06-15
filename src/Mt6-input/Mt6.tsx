@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import s from './Mt6.module.css';
 import {FullInput} from './components/FullInput';
+import {Input} from './components/Input';
+import {Button} from './components/Button';
 
 
 function Mt6() { // В видео (микротаски input) эта компонента называется App !!!
@@ -11,21 +13,33 @@ function Mt6() { // В видео (микротаски input) эта компо
         {message: 'message3'}
     ]);
 
+    let [title, setTitle] = useState('');
+
+    // console.log(title);
+
     const addMessage = (title: string) => {
+
         let newMessage = {message: title};
+        
         setMessage([newMessage, ...message]);
+    };
+
+    const callBackButtonHandler = () => {
+        addMessage(title);
+        setTitle('');
     };
 
 
     return (
         <div className={s.inputField}>
             <h3>Mt6 Lesson (Input)</h3>
-            {/*<div>*/}
-            {/*    <input/>*/}
-            {/*    <button>+</button>*/}
-            {/*</div>*/}
 
-            <FullInput addMessage={addMessage}/>
+            {/* !!!!! 1. Раскомментировать находящуюся НИЖЕ компоненту FullInput, если надо продемонстрировать работу универсального инпута в режиме FullInput (1-я часть видоса (ДО 39 мин 20 сек)) !!!!! */}
+
+            {/*<FullInput addMessage={addMessage}/>*/}
+
+            <Input setTitle={setTitle} title={title}/>
+            <Button name={'+'} callBack={callBackButtonHandler}/>
 
             {message.map((el, index) => {
                 return (
