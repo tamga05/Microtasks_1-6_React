@@ -20,7 +20,7 @@ function Mt6() { // В видео (микротаски input) эта компо
     const addMessage = (title: string) => {
 
         let newMessage = {message: title};
-        
+
         setMessage([newMessage, ...message]);
     };
 
@@ -47,6 +47,7 @@ function Mt6() { // В видео (микротаски input) эта компо
                 );
             })
             }
+            <br/>
         </div>
     );
 }
@@ -54,21 +55,19 @@ function Mt6() { // В видео (микротаски input) эта компо
 export default Mt6;
 
 
-// export function Example() {
+export function Example() {
 
-//     // Объявление новой переменной состояния «count»
-//     const [count, setCount] = useState(0);
-//
-//
-//     return (
-//         <div>
-//             <p>Вы кликнули {count} раз(а)</p>
-//             <button onClick={() => setCount(count + 1)}>
-//                 Нажми на меня
-//             </button>
-//             <br/>
-//             <br/>
-//             <hr/>
-//         </div>
-//     );
-// }
+    // Объявление новой переменной состояния «count»
+    const [count, setCount] = useState(0);
+
+
+    return (
+        <div>
+            <p className={s.number}>Вы кликнули {count} раз(а)</p>
+            <button className={s.button} onClick={() => setCount(count + 1)}>
+                Нажми на меня
+            </button>
+            <hr/>
+        </div>
+    );
+}

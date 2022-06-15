@@ -8,7 +8,7 @@ import {Mt3} from './Mt3-button/Mt3';
 import {Mt4} from './Mt4-useState/Mt4';
 import {Mt5} from './Mt5-filter-method/Mt5';
 import Mt6 from './Mt6-input/Mt6';
-// import {Example} from './Mt6-input/Mt6';
+import {Example} from './Mt6-input/Mt6';
 
 
 const Students = [
@@ -51,7 +51,7 @@ function App() {
             <hr/>
             <Mt6/>
             <hr/>
-            {/*<Example/>*/}
+            <Example/>
         </div>
     );
 }
