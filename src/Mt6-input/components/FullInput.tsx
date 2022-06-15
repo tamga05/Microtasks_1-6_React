@@ -1,8 +1,7 @@
-import React, {ChangeEvent, MouseEventHandler, useState} from 'react';
+import React, {ChangeEvent, useState} from 'react';
 
 
 type FullInputPropsType = {
-    // addMessage: MouseEventHandler<HTMLButtonElement>
     addMessage: (title: string) => void
 };
 
@@ -16,11 +15,12 @@ export const FullInput = (props: FullInputPropsType) => {
 
     const onClickButtonHandler = () => {
         props.addMessage(title);
+        setTitle('');
     };
 
     return (
         <div>
-            <input onChange={onChangeInputHandler}/>
+            <input value={title} onChange={onChangeInputHandler}/>
             <button onClick={onClickButtonHandler}>+
             </button>
         </div>

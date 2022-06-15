@@ -12,8 +12,10 @@ function Mt6() { // В видео (микротаски input) эта компо
     ]);
 
     const addMessage = (title: string) => {
-        console.log(title);
+        let newMessage = {message: title};
+        setMessage([newMessage, ...message]);
     };
+
 
     return (
         <div className={s.inputField}>
