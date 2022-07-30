@@ -35,7 +35,7 @@ export const Mt3 = () => {
     };
 
     const Button3Foo = () => {
-        console.log('I\'m stuppid button');
+        console.log('I\'m stupid button');
     };
 
 
@@ -46,7 +46,7 @@ export const Mt3 = () => {
             {/*<button>MyYouTubeChannel-2</button>*/}
             <Button name={'MyYouTubeChannel-1'} callBack={() => Button1Foo('I\'m Vasya', ', 25', ', live in Moscow')}/>
             <Button name={'MyYouTubeChannel-2'} callBack={() => Button2Foo('I\'m Ivan')}/>
-            <Button name={'Stuppid button'} callBack={Button3Foo}/>
+            <Button name={'Stupid button'} callBack={Button3Foo}/>
             <br/>
         </div>
     );

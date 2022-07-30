@@ -2,10 +2,30 @@
 
 }
 
+.number {
+    font-size: 22px;
+    font-weight: 700;
+}
+
 .button {
     height: 30px;
     border: 1px solid;
     border-radius: 5px;
     background-color: #bed3f9;
     margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.buttonReset {
+    height: 30px;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: #fb96dc;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.buttonReset:hover {
+    background-color: #fb4d5f;
 }

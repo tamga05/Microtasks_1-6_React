@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './App.css';
 import {Mt2} from './Mt2-map-method/Mt2';
 import {Mt1} from './Mt1-components/Mt1';

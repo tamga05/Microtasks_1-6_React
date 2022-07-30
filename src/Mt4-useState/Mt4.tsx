@@ -5,17 +5,17 @@ import s from './Mt4.module.css';
 export const Mt4 = () => {
 
 // ИНИЦИАЛИЗИРУЮ useState
-    let [a, setA] = useState(0)
+    let [a, setA] = useState(0);
 
 
     const onClickHandler = () => {
-        setA(++a)
-        console.log(a)
-    }
+        setA(++a);
+        // console.log(a)
+    };
 
     const onClickHandlerDelete = () => {
-        setA(0)
-    }
+        setA(0);
+    };
 
 
     return (

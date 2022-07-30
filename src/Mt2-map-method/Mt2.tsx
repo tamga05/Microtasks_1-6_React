@@ -24,11 +24,11 @@ export const Mt2 = (props: Mt2Type) => {
                             <span> {objectFromStudentArray.name}</span>
                             <span>: {objectFromStudentArray.age} years old</span>
                         </li>
-                    )
+                    );
                 })}
             </ul>
             <br/>
         </div>
     );
-}
+};
 

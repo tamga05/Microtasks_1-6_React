@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import s from './Mt6.module.css';
-import {FullInput} from './components/FullInput';
 import {Input} from './components/Input';
 import {Button} from './components/Button';
 
@@ -63,10 +62,11 @@ export function Example() {
 
     return (
         <div>
-            <p className={s.number}>Вы кликнули {count} раз(а)</p>
+            <p>Вы кликнули <span className={s.number}>{count}</span> раз(а)</p>
             <button className={s.button} onClick={() => setCount(count + 1)}>
                 Нажми на меня
             </button>
+            <button className={s.buttonReset} onClick={() => setCount(0)}>Reset</button>
             <hr/>
         </div>
     );
